@@ -7,9 +7,17 @@
 //
 
 #include <stdio.h>
+#define MIN 1
+#define MAX 30
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(void) {
+    int i;
+    
+    printf("%10s %10s %10s %10s %10s\n", "Value", "Square", "Cube", "Fourth", "Fifth");
+    printf("%10s %10s %10s %10s %10s\n", "-----", "------", "----", "------", "-----");
+    
+    for (i = MIN; i <= MAX; ++i){
+        printf("%10d %10d %10d %10d %10d\n", i, i * i, i * i * i, i * i * i * i, i * i * i * i * i);
+    }
     return 0;
 }
