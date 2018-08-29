@@ -13,11 +13,11 @@
 int main(void) {
     int i;
     
-    printf("%10s %10s %10s %10s %10s\n", "Value", "Square", "Cube", "Fourth", "Fifth");
-    printf("%10s %10s %10s %10s %10s\n", "-----", "------", "----", "------", "-----");
+    printf("%8s %8s %8s %8s %8s\n", "Value", "Square", "Cube", "Fourth", "Fifth");
+    printf("%8s %8s %8s %8s %8s\n", "-----", "------", "----", "------", "-----");
     
     for (i = MIN; i <= MAX; ++i){
-        printf("%10d %10d %10d %10d %10d\n", i, i * i, i * i * i, i * i * i * i, i * i * i * i * i);
+        printf("%8d %8d %8d %8d %8d\n", i, i * i, i * i * i, i * i * i * i, i * i * i * i * i);
     }
     return 0;
 }
